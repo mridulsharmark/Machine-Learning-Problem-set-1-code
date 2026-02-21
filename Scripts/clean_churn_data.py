@@ -59,7 +59,7 @@ def clean_data(input_path, output_path):
     print(f"New shape: {df_cleaned.shape}")
 
 if __name__ == "__main__":
-    # Define input and output paths
-    input_file = "/Users/mridulsharma/Desktop/Term 2 Assessments/Machine learning/Dataset/Customer churn dataset.csv"
-    output_file = "/Users/mridulsharma/Desktop/Term 2 Assessments/Machine learning/Dataset/customer_churn_cleaned.csv"
+    # Define input and output paths for the code execution error free.
+    input_file = "Machine-Learning-Problem-set-1-code/Dataset/Customer churn dataset.csv"
+    output_file = "Machine-Learning-Problem-set-1-code/Dataset/customer_churn_cleaned.csv"
     clean_data(input_file, output_file)
