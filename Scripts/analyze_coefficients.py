@@ -3,6 +3,7 @@ import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+import os
 
 """
 Script: analyze_coefficients.py
@@ -26,11 +27,15 @@ def analyze_coefficients():
     # 1. Load Model and Data
     print("Loading model and data...")
     try:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        model_path = os.path.join('logistic_regression.pkl')
+        data_path = os.path.join('Dataset', 'customer_churn_cleaned.csv')
+        
         # Load the trained Logistic Regression model
-        model = joblib.load('logistic_regression.pkl')
+        model = joblib.load(model_path)
         # Load the dataset to retrieve feature names (columns)
         # Note: Must align with the data structure used during training
-        df = pd.read_csv('Dataset/customer_churn_cleaned.csv')
+        df = pd.read_csv(data_path)
     except FileNotFoundError as e:
         print(f"Error: {e}")
         return
@@ -89,9 +94,13 @@ def analyze_coefficients():
     
     plt.tight_layout()
     
-    output_file = 'feature_importance_logreg.png'
+    output_file = os.path.join(base_dir, 'feature_importance_logreg.png')
     plt.savefig(output_file)
     print(f"\nFeature importance plot saved to {output_file}")
+    
+    # Display the plot
+    plt.show()
+
 
 if __name__ == "__main__":
     analyze_coefficients()
