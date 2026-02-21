@@ -70,6 +70,6 @@ def audit_dataset(file_path):
     print("Audit Complete.")
 
 if __name__ == "__main__":
-    # Define the path to the raw dataset
-    file_path = "/Users/mridulsharma/Desktop/Term 2 Assessments/Machine learning/Dataset/Customer churn dataset.csv"
+    # Define the path to the raw dataset and I changed the path to run this code and locate the CSV file.
+    file_path = "Machine-Learning-Problem-set-1-code/Dataset/Customer churn dataset.csv"
     audit_dataset(file_path)
