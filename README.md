@@ -4,14 +4,12 @@
 This project aims to predict customer turnover (churn) in the telecommunications industry using machine learning. By analyzing customer demographics, service usage, and account information, we identify key drivers of churn and build predictive models to help the business improve retention strategies.
 
 ## Repository Structure
-- **`data/`**: Contains the raw (`Customer churn dataset.csv`) and cleaned (`customer_churn_cleaned.csv`) datasets.
-- **`scripts/`**:
+- **`Dataset/`**: Contains the raw (`Customer churn dataset.csv`), cleaned (`customer_churn_cleaned.csv`) datasets and also the results of Analysis (`model_results.csv`).
+- **`Scripts/`**:
     - `audit_churn_data.py`: Audits the raw data for missing values and data types.
     - `clean_churn_data.py`: Preprocesses the data (imputation, encoding, cleaning).
     - `train_models.py`: Trains and evaluates Logistic Regression and Random Forest models.
     - `analyze_coefficients.py`: Analyzes the Logistic Regression model to find top churn drivers.
-- **`results/`**: Contains performance metrics (`model_results.csv`) and visualization plots.
-- **`technical_report.md`**: A detailed report on the methodology, findings, and recommendations.
 
 ## How to reproduce findings
 1.  **Data Audit**:
