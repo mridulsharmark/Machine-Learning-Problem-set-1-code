@@ -28,7 +28,7 @@ This project aims to predict customer turnover (churn) in the telecommunications
     Train Logistic Regression and Random Forest models.
     python3 train_models.py
 
-    *Output*: `model_results.csv`, `logistic_regression.pkl`, `random_forest.pkl`
+    *Output*: `model_results.csv`
 
 4.  **Feature Importance Analysis**:
     Extract coefficients from the best model to identify churn drivers.
