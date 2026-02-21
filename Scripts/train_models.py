@@ -30,7 +30,7 @@ def train_and_evaluate():
     print("Loading cleaned data...")
     try:
         # Load the preprocessed dataset and changed the path.
-        df = pd.read_csv('/Machine-Learning-Problem-set-1-code/Dataset/customer_churn_cleaned.csv')
+        df = pd.read_csv('Dataset/customer_churn_cleaned.csv')
     except FileNotFoundError:
         print("Error: Cleaned data file not found.")
         return
