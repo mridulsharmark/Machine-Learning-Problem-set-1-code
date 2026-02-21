@@ -60,6 +60,6 @@ def clean_data(input_path, output_path):
 
 if __name__ == "__main__":
     # Define input and output paths for the code execution error free.
-    input_file = "Machine-Learning-Problem-set-1-code/Dataset/Customer churn dataset.csv"
-    output_file = "Machine-Learning-Problem-set-1-code/Dataset/customer_churn_cleaned.csv"
+    input_file = "Dataset/Customer churn dataset.csv"
+    output_file = "Dataset/customer_churn_cleaned.csv"
     clean_data(input_file, output_file)
