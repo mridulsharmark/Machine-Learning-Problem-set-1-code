@@ -31,6 +31,7 @@ def train_and_evaluate():
     try:
         # Load the preprocessed dataset and changed the path.
         df = pd.read_csv('Dataset/customer_churn_cleaned.csv')
+        df = df.dropna()
     except FileNotFoundError:
         print("Error: Cleaned data file not found.")
         return
