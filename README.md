@@ -11,6 +11,9 @@ This project aims to predict customer turnover (churn) in the telecommunications
     - `train_models.py`: Trains and evaluates Logistic Regression and Random Forest models.
     - `analyze_coefficients.py`: Analyzes the Logistic Regression model to find top churn drivers.
 
+## Libraries need to reproduce findings
+Panda, Numpy, Matplotlib, Seaborn, joblib, scikit-learn.
+
 ## How to reproduce findings
 1.  **Data Audit**:
     Inspect the raw data to understand its structure and quality issues.
